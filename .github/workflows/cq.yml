@@ -17,4 +17,3 @@ jobs:
             - name: cloudquery
               with:
                   entrypoint: "/app/cloudquery"
-                  command: fetch
