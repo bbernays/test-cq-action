@@ -12,7 +12,7 @@ jobs:
     super-job:
         runs-on: ubuntu-18.04
         container:
-            image: hcr.io/cloudquery/cloudquery:0.31.5
+            image: ghcr.io/cloudquery/cloudquery:0.31.5
         steps:
             - name: cloudquery
               run: cloudquery version
