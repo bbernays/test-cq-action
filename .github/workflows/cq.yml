@@ -15,4 +15,6 @@ jobs:
             image: ghcr.io/cloudquery/cloudquery:0.31.5
         steps:
             - name: cloudquery
-              run: echo "hello world"
+              with:
+                  entrypoint: "/app/cloudquery"
+                  command: fetch
