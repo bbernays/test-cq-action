@@ -15,4 +15,4 @@ jobs:
             image: ghcr.io/cloudquery/cloudquery:0.31.5
         steps:
             - name: cloudquery
-              run: ls
+              run: echo "hello world"
