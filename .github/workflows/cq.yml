@@ -1,0 +1,18 @@
+# Action name
+name: Super Action
+
+# Here, this action will be enabled on all pushes.
+# Modify this to fit your needs.
+on:
+    workflow_dispatch:
+
+# Jobs section
+jobs:
+    # The job that will use the container image you just pushed to ghcr.io
+    super-job:
+        runs-on: ubuntu-18.04
+        container:
+            image: hcr.io/cloudquery/cloudquery:0.31.5
+        steps:
+            - name: cloudquery
+              run: cloudquery version
