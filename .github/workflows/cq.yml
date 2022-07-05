@@ -16,3 +16,4 @@ jobs:
               uses: docker://ghcr.io/cloudquery/cloudquery:0.31.5
               with:
                   entrypoint: "/app/cloudquery"
+                  args: fetch
